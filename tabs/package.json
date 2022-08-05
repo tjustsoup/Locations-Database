@@ -1,0 +1,84 @@
+{
+  "name": "Teamsfx-with-Kepler",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@fluentui/react-northstar": "^0.61.0",
+    "@microsoft/mgt-element": "2.4.1-next.teamsfx.3511fba",
+    "@microsoft/mgt-react": "2.4.1-next.teamsfx.3511fba",
+    "@microsoft/mgt-teamsfx-provider": "2.4.1-next.teamsfx.3511fba",
+    "@microsoft/microsoft-graph-client": "^3.0.1",
+    "@microsoft/teams-js": "^1.9.0",
+    "@microsoft/teamsfx": "^0.6.0",
+    "@microsoft/teamsfx-react": "^1.0.0",
+    "@mui/icons-material": "5.6.0",
+    "@mui/lab": "^5.0.0-alpha.87",
+    "@mui/material": "^5.6.2",
+    "@mui/x-data-grid": "^5.9.0",
+    "@reduxjs/toolkit": "^1.8.2",
+    "@types/react-virtualized": "^9.21.20",
+    "axios": "^0.21.1",
+    "dotenv": "^16.0.0",
+    "kepler.gl": "^2.5.5",
+    "md5": "^2.3.0",
+    "msteams-react-base-component": "^3.1.0",
+    "papaparse": "^5.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.8",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^4.0.3",
+    "react-virtualized": "^9.22.3",
+    "redux": "^4.1.2",
+    "smartystreets-javascript-sdk": "^1.13.6",
+    "styled-components": "^5.3.5",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/md5": "^2.3.2",
+    "@types/node": "^12.0.0",
+    "@types/papaparse": "^5.3.2",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/smartystreets-javascript-sdk": "^1.6.5",
+    "@types/styled-components": "^5.1.25",
+    "@types/uuid": "^8.3.4",
+    "cross-env": "^7.0.3",
+    "env-cmd": "^10.1.0",
+    "react-error-overlay": "6.0.9",
+    "typescript": "^4.1.2"
+  },
+  "scripts": {
+    "dev:teamsfx": "env-cmd --silent -f .env.teamsfx.local npm run start",
+    "start": "cross-env react-scripts start",
+    "install:teamsfx": "npm install",
+    "build": "cross-env react-scripts build",
+    "build:teamsfx": "cross-env-shell \"env-cmd -f .env.teamsfx.${TEAMS_FX_ENV} npm run build\"",
+    "build:teamsfx:dev": "cross-env TEAMS_FX_ENV=dev npm run build:teamsfx",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "."
+}
